@@ -43,3 +43,8 @@
 	<p>In Progress...</p>
 	<p>[Gold Medalist] Regency Stage Senior High School National Science Olympiad (2019)</p>
 </section>
+
+<section id="contacts" class="h-fit py-4 mb-0 text-white bg-gradient-to-br from-orange-400 to-rose-600">
+	<h1 class="text-2xl">Contacts</h1>
+    <p class="text-xl text-center">In Progress... <br></p>
+</section>
