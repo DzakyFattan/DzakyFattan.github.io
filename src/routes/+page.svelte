@@ -1,8 +1,9 @@
 <script>
 	import src from "/src/lib/images/profile-img.jpeg";
+	import Education from "./Education.svelte";
 </script>
 
-<section id="top" class="flex flex-col-reverse justify-center items-center h-screen gap-16 bg-gradient-to-br from-rose-600 to-orange-400 px-16 md:flex-row px-32">
+<section id="top" class="flex flex-col-reverse justify-between items-center h-screen gap-16 my-0 bg-gradient-to-br from-rose-600 to-orange-400 px-16 md:flex-row px-32">
 	<div class="flex flex-col text-white">
 		<h1 class="font-normal text-start text-4xl md:text-5xl">Hi, I'm <strong>Dzaky Fattan Rizqullah</strong></h1>
 		<p class="text-xl md:text-2xl">
@@ -16,12 +17,12 @@
 
 <section id="educations" class="text-2xl text-center">
 	<h1>Education</h1>
-	<p>In Progress...</p>
-	<p>Institut Teknologi Bandung</p>
-	<p>SMA Negeri 1 Medan</p>
-	<p>SMP Negeri 1 Medan</p>
-	<p>SD Harapan 2 Medan</p>
-	<p>TK Harapan 1 Medan</p>
+	<br>
+	<Education title="Institut Teknologi Bandung" description="Bachelor of Informatics" date="2020 - Now"/>
+	<Education title="SMA Negeri 1 Medan" description="Senior High School" date="2017 - 2020"/>
+	<Education title="SMP Negeri 1 Medan" description="Junior High School" date="2014 - 2017"/>
+	<Education title="SD Harapan 2 Medan" description="Elementary School" date="2008 - 2014"/>
+	<Education title="TK Harapan 1 Medan" description="Kindergarten" date="2006 - 2008"/>
 </section>
 
 <section id="projects" class="text-2xl text-center">
@@ -36,12 +37,6 @@
 	<p>Adoribu (2022) - Basic Music Player Web App with various Web Tech Stacks - PHP, HTML, CSS, JS, React, Node, Express, Java, SQL</p>
 	<p>Majika Unbound (2023) - Android Application with Twibbon, purchases, and QR Scan Features - Android, Kotlin</p>
 	<p>SakuGwej (2023) - Money Management Progressive Web App - VueTS, TailwindCS</p>
-</section>
-
-<section id="achievements" class="text-2xl text-center">
-	<h1>Achievements</h1>
-	<p>In Progress...</p>
-	<p>[Gold Medalist] Regency Stage Senior High School National Science Olympiad (2019)</p>
 </section>
 
 <section id="contacts" class="h-fit py-4 mb-0 text-white bg-gradient-to-br from-orange-400 to-rose-600">

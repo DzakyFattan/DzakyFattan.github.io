@@ -12,7 +12,7 @@
 <div class="app">
 	<Header />
 
-	<main class="flex flex-col flex-1 w-full box-border">
+	<main class="flex flex-col flex-1 w-full box-border bg-black text-white">
 		<slot />
 	</main>
 
