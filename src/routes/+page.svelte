@@ -2,6 +2,7 @@
 	import src from "/src/lib/images/profile-img.jpeg";
 	import Education from "./Education.svelte";
 	import ProjectCard from "./ProjectCard.svelte";
+	import ContactCard from "./ContactCard.svelte";
 
 	const educations = [
 		{color: "start", title: "Institut Teknologi Bandung", description: "Bachelor of Informatics", date: "2020"},
@@ -76,6 +77,14 @@
 			link: "https://github.com/DzakyFattan/SakuGwej-Frontend"
 	  	}
 	];
+
+	const contacts = [
+		{ name: "Email", text: "dzaky.fattan@gmail.com", link: "mailto:dzaky.fattan@gmail.com"},
+		{ name: "WhatsApp", text: "+628116012019", link: "https://wa.me/628116012019"},
+		{ name: "GitHub", text: "dzakyfattan", link: "https://github.com/DzakyFattan" },
+		{ name: "Instagram", text: "dzakfr1006", link: "https://www.instagram.com/dzakfr1006/"},
+		{ name: "Twitter", text: "TheEnderDuck", link: "https://twitter.com/TheEnderDuck"},
+	]
 </script>
 
 <section id="top" class="
@@ -124,10 +133,16 @@ bg-gradient-to-br from-rose-600 to-orange-400
 </section>
 
 <section id="contacts" class="
-h-fit pb-4 my-0 
+h-fit p-4 my-0 
 text-white text-center sm:text-lg md:text-2xl
 bg-gradient-to-br from-orange-400 to-rose-600">
 	<h1 class="mb-0 sm:text-4xl">Contacts</h1>
-    <p class="text-white text-sm sm:text-base">In Progress... <br></p>
-
+    <p class="text-white text-sm sm:text-base">Get in touch with me!<br></p>
+	<br>
+	<div class="grid auto-cols-min gap-4 justify-center justify-items-center" 
+	style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+		{#each contacts as contact}
+			<ContactCard {...contact}/>
+		{/each}
+	</div>
 </section>
