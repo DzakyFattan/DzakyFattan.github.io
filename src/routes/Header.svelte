@@ -18,7 +18,13 @@
 	}
 </script>
 
-<header class="fixed w-screen flex flex-row bg-black text-white items-center justify-between px-16 md:justify-between">
+<header class="
+fixed w-screen 
+px-8
+bg-black text-white 
+flex flex-row 
+items-center justify-between
+sm:px-16">
 	<h1 class="text-lg my-2 font-black md:text-2xl">DzakyFattan</h1>
 	<nav class="hidden md:inline-block">
 		<ul class="flex flex-row gap-8 text-lg">
